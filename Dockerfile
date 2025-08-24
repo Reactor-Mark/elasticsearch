@@ -8,7 +8,8 @@ ENV ES_JAVA_OPTS="-Xms256m -Xmx256m"
 
 # Desactiva algunas características que consumen recursos
 ENV bootstrap.memory_lock=false
-ENV xpack.security.enabled=false   # Desactiva seguridad si no la necesitas
+ENV xpack.security.enabled=false   
+# Desactiva seguridad si no la necesitas
 
 # Expón el puerto HTTP (Railway asignará el PORT automáticamente)
 EXPOSE 9200
